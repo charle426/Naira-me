@@ -13,6 +13,7 @@ export default function Navbar(props) {
   const logoRef = React.useRef(null)
   React.useEffect(() => {
     setNavState(false)
+    window.scrollTo(0, 0)
   }, [pathname])
   navToggle.forEach((nav) => {
     // console.log(nav.dataset.id);
